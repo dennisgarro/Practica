@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class utilidades {
     validaciones v = new validaciones();
+    Exportar e = new Exportar();
 
     public int menu(Scanner sc) {
         System.out.println("Bienvenido a la tienda de structuras noche");
@@ -19,16 +20,19 @@ public class utilidades {
 
     }
 
-    public LinkedList<objVenta> LLenaLista(LinkedList<objVenta> l) {
-        boolean pedir = true;
-        while (pedir) {
+    public LinkedList<objVenta> LLenaLista(LinkedList<objVenta> l, Scanner sc) {
 
-        }
+        objVenta o = new objVenta(NumeroFactura(l), PedirNombre(sc, 1), PedirNombre(sc, 2), TotalVenta(sc, v),
+                DatosEnteros(sc, 1), 1);
+        l.add(o);
+        e.exportarArchivo(l, 1);
+
+        return l;
+
     }
 
     public static int NumeroFactura(LinkedList<objVenta> l) {
-        int UltimaFactura = l.size();
-        return UltimaFactura++;
+        return l.size() + 1;
     }
 
     public String PedirNombre(Scanner sc, int opt) {
@@ -63,5 +67,4 @@ public class utilidades {
         return v.ValidaEntero(sc);
 
     }
-
 }

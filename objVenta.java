@@ -6,6 +6,16 @@ public class objVenta {
     private int CantidadProductos;
     private int EstadoVenta; // registrada 1 o cancelada 0.
 
+    public objVenta(int numeroFactura, String nombreCliente, String nombreVendedor, Double totalVenta,
+            int cantidadProductos, int estadoVenta) {
+        NumeroFactura = numeroFactura;
+        NombreCliente = nombreCliente;
+        NombreVendedor = nombreVendedor;
+        TotalVenta = totalVenta;
+        CantidadProductos = cantidadProductos;
+        EstadoVenta = estadoVenta;
+    }                                                                       
+
     public objVenta() {
     }
 
