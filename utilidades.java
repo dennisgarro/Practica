@@ -26,6 +26,8 @@ public class utilidades {
                 DatosEnteros(sc, 1), 1);
         l.add(o);
         e.exportarArchivo(l, 1);
+        ExportarJson ej = new ExportarJson();
+        ej.exportarJson(l);
 
         return l;
 
