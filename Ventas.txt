@@ -1,14 +1,21 @@
 Numero Factura: 1
 Nombre Cliente: yo
-Nombre Vendedor: : tu
+Nombre Vendedor: : : tu
 Total Venta: 25000.0
 Cantidad Productos: 4
 Estado Venta: 1
 ------------------------------------------------------ 
 Numero Factura: 2
 Nombre Cliente: ella
-Nombre Vendedor: elle
+Nombre Vendedor: : elle
 Total Venta: 85000.0
 Cantidad Productos: 8
+Estado Venta: 1
+------------------------------------------------------ 
+Numero Factura: 3
+Nombre Cliente: jenny
+Nombre Vendedor: pati�o
+Total Venta: 8000000.0
+Cantidad Productos: 5
 Estado Venta: 1
 ------------------------------------------------------ 
