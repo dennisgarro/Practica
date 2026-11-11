@@ -1,0 +1,6 @@
+//json 
+{
+    "java.project.referencedLibraries": [
+        "Lib/**/*.jar"
+    ]
+}
