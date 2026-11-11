@@ -6,8 +6,11 @@ public class menu {
         Scanner sc = new Scanner(System.in);
         utilidades u = new utilidades();
         Importar i = new Importar();
+        ImportarJson ij = new ImportarJson();
         LinkedList<objVenta> l = new LinkedList<>();
+        LinkedList<objVenta> lj = new LinkedList<>();
         l = i.ImportarArchivo();
+        lj = ij.Importar("Ventas");
         boolean seguir = true;
         while (seguir) {
             switch (u.menu(sc)) {
